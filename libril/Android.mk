@@ -1,6 +1,6 @@
 # Copyright 2006 The Android Open Source Project
 
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),aloha)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),alohag)
 
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)

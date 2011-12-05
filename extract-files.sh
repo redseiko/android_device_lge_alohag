@@ -1,32 +1,36 @@
 #!/bin/sh
 
-mkdir -p ../../../vendor/lge/aloha/proprietary
+mkdir -p ../../../vendor/lge/alohag/proprietary
 
 DIRS="
 bin
 etc/firmware
+etc/firmware/wlan
 etc/wl
 lib/egl
 lib/hw
 "
 
 for DIR in $DIRS; do
-	mkdir -p ../../../vendor/lge/aloha/proprietary/$DIR
+	mkdir -p ../../../vendor/lge/alohag/proprietary/$DIR
 done
 
 FILES="
 bin/akmd2
-bin/BCM4329B1_002.002.023.0313.0333.hcd
+bin/BCM4329B1_002.002.023.0313.0341.hcd
 bin/netmgrd
 bin/port-bridge
 bin/qmuxd
 bin/rild
 bin/rmt_storage
 bin/tsdown
-bin/wiperiface
 
 etc/firmware/yamato_pfp.fw
 etc/firmware/yamato_pm4.fw
+
+etc/firmware/wlan/qcom_fw.bin
+etc/firmware/wlan/qcom_cfg.ini
+etc/firmware/wlan/cfg.dat
 
 etc/wl/nvram.txt
 etc/wl/rtecdc.bin
@@ -39,18 +43,18 @@ lib/egl/libGLESv2_adreno200.so
 lib/egl/libq3dtools_adreno200.so
 
 lib/hw/gralloc.default.so
-lib/hw/gralloc.aloha.so
-lib/hw/lights.aloha.so
-lib/hw/sensors.aloha.so
+lib/hw/gralloc.msm7k.so
+lib/hw/lights.msm7k.so
+lib/hw/sensors.alohag.so
+lib/hw/gps.default.so
+lib/hw/copybit.msm7k.so
 
 lib/liba2dp.so
 lib/libaudioeq.so
 
 lib/libauth.so
 lib/libbcmwl.so
-lib/libcm.so
 lib/libdiag.so
-lib/libdll.so
 lib/libdsm.so
 lib/libdss.so
 lib/libdsutils.so
@@ -100,6 +104,6 @@ lib/libOmxWmvDec.so
 "
 
 for FILE in $FILES; do
-	adb pull system/$FILE ../../../vendor/lge/aloha/proprietary/$FILE
+	adb pull system/$FILE ../../../vendor/lge/alohag/proprietary/$FILE
 done
 

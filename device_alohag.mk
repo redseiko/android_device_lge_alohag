@@ -79,7 +79,6 @@ PRODUCT_COPY_FILES += \
     device/lge/alohag/files/lib/modules/wireless.ko:system/lib/modules/wireless.ko \
     device/lge/alohag/files/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/lge/alohag/proprietary/etc/wl/nvram.txt:system/etc/wl/nvram.txt \
-    device/lge/alohag/files/etc/dhcpd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     vendor/lge/alohag/proprietary/etc/wl/rtecdc.bin:system/etc/wl/rtecdc.bin \
     vendor/lge/alohag/proprietary/etc/wl/rtecdc-apsta.bin:system/etc/wl/rtecdc-apsta.bin \
     vendor/lge/alohag/proprietary/etc/wl/rtecdc-mfgtest.bin:system/etc/wl/rtecdc-mfgtest.bin

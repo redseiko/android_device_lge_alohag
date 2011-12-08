@@ -90,13 +90,14 @@ lib/libOmxAdpcmDec.so
 lib/libOmxAmrDec.so
 lib/libOmxAmrEnc.so
 lib/libOmxAmrRtpDec.so
-lib/libOmxEvrcDec.so
+lib/libOmxAmrwbDec.so
+lib/libOmxEvrcHwDec.so
 lib/libOmxEvrcEnc.so
 lib/libOmxH264Dec.so
 lib/libOmxMp3Dec.so
 lib/libOmxMpeg4Dec.so
 lib/libOmxQcelp13Enc.so
-lib/libOmxQcelpDec.so
+lib/libOmxQcelpHwDec.so
 lib/libOmxVidEnc.so
 lib/libOmxWmaDec.so
 lib/libOmxWmvDec.so

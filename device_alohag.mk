@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/lge/alohag/files/alohag.kcm.bin:system/usr/keychars/alohag.kcm.bin \
-    device/lge/alohag/files/aloha.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
+    device/lge/alohag/files/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
     device/lge/alohag/files/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
     device/lge/alohag/files/alohag.kl:system/usr/keylayout/alohag.kl \
     device/lge/alohag/files/etc/apns-conf.xml:system/etc/apns-conf.xml \

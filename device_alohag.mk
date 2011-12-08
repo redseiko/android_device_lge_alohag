@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
     device/lge/alohag/files/init.alohag.rc:root/init.alohag.rc \
     device/lge/alohag/files/logo.rle:root/logo.rle \
     device/lge/alohag/files/init.qcom.post_boot.sh:root/init.qcom.post_boot.sh \
-    device/lge/alohag/files/init.lge.hidden-reset.sh:root/init.lge.hidden-reset.sh \
+    device/lge/alohag/files/init.lge.hidden_reset.sh:root/init.lge.hidden_reset.sh \
     device/lge/alohag/files/init.qcom.rc:root/init.qcom.rc \
     device/lge/alohag/files/init.qcom.sh:root/init.qcom.sh \
     device/lge/alohag/files/init.upgrade.rc:root/init.upgrade.rc \
@@ -55,7 +55,7 @@ PRODUCT_COPY_FILES += \
     device/lge/alohag/files/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
     device/lge/alohag/files/etc/init.qcom.coex.sh:system/etc/init.qcom.coex.sh \
     device/lge/alohag/files/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
-    device/lge/alohag/files/etc/init.qcom.post-boot.sh:system/etc/init.qcom.post-boot.sh \
+    device/lge/alohag/files/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
     device/lge/alohag/files/etc/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh \
     device/lge/alohag/files/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh \
     device/lge/alohag/files/sbin/chargerlogo:root/sbin/chargerlogo \
@@ -214,7 +214,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/alohag/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
     vendor/lge/alohag/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     vendor/lge/alohag/proprietary/lib/libOmxWmvDec.so:system/lib/libOmxWmvDec.so \
-    vendor/lge/alohag/files/etc/01_qcomm_omx.cfg:system/etc/01_qcomm_omx.cfg \
+    device/lge/alohag/files/etc/01_qcomm_omx.cfg:system/etc/01_qcomm_omx.cfg \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \

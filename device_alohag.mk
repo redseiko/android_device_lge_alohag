@@ -51,6 +51,16 @@ PRODUCT_COPY_FILES += \
     device/lge/alohag/files/init.upgrade.rc:root/init.upgrade.rc \
     device/lge/alohag/files/sbin/bootlogo:root/sbin/bootlogo \
     device/lge/alohag/files/sbin/chargerlogo:root/sbin/chargerlogo \
+    device/lge/alohag/files/etc/init.brcm.sh:system/etc/init.brcm.sh \
+    device/lge/alohag/files/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
+    device/lge/alohag/files/etc/init.qcom.coex.sh:system/etc/init.qcom.coex.sh \
+    device/lge/alohag/files/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
+    device/lge/alohag/files/etc/init.qcom.post-boot.sh:system/etc/init.qcom.post-boot.sh \
+    device/lge/alohag/files/etc/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh \
+    device/lge/alohag/files/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh \
+    device/lge/alohag/files/sbin/chargerlogo:root/sbin/chargerlogo \
+    device/lge/alohag/files/sbin/chargerlogo:root/sbin/chargerlogo \
+    device/lge/alohag/files/sbin/chargerlogo:root/sbin/chargerlogo \
     
 
 # 2D (using proprietary because of poor perfomance of open source libs)
@@ -132,6 +142,7 @@ PRODUCT_COPY_FILES += \
 # Touchscreen firmware updater
 PRODUCT_COPY_FILES += \
     vendor/lge/alohag/proprietary/bin/tsdown:system/bin/tsdown \
+    device/lge/alohag/files/ts.conf:system/ts.conf \
     
 # netmgr (What is this?)
 PRODUCT_COPY_FILES += \
@@ -203,6 +214,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/alohag/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
     vendor/lge/alohag/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     vendor/lge/alohag/proprietary/lib/libOmxWmvDec.so:system/lib/libOmxWmvDec.so \
+    vendor/lge/alohag/files/etc/01_qcomm_omx.cfg:system/etc/01_qcomm_omx.cfg \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \

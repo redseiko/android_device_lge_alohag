@@ -93,7 +93,7 @@ PRODUCT_COPY_FILES += \
     device/lge/alohag/files/etc/AudioFilter.csv:system/etc/AudioFilter.csv \
     vendor/lge/alohag/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
     vendor/lge/alohag/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
-    device/lge/aloha/files/etc/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
+    device/lge/alohag/files/etc/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
 
 # Device permissions
 PRODUCT_COPY_FILES += \

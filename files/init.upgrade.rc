@@ -1,0 +1,9 @@
+	# change cache 
+    on boot
+	
+	chmod 0771 /cache 
+	
+	 # create dalvik-cache and double-check the perms
+    mkdir /cache/dalvik-cache 0771 system system
+    chown system system /cache/dalvik-cache
+    chmod 0771 /cache/dalvik-cache

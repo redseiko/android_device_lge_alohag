@@ -25,7 +25,9 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-
+#LGSI_C710h_GB_Upgrade CHANGE-S Unnati.kothekar@lge.com
+#String msm7627_surf changed to alohag_302-220 for fingerprint new rule support
+#LGSI_C710h_GB_Upgrade CHANGE-E Unnati.kothekar@lge.com
 target=`getprop ro.product.device`
 case "$target" in
     "msm7201a_ffa" | "msm7201a_surf")
@@ -36,12 +38,13 @@ case "$target" in
         echo 245760 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
         ;;
 
-    "msm7627_ffa" | "msm7627_surf")
+    "msm7627_ffa" | "msm7627_surf" | "alohag_302-220")
         echo "ondemand" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
         echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/up_threshold
         echo 30 > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/down_differential
         echo 500000 > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate
         echo 245760 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+        echo 604800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
         ;;
 
     "qsd8250_surf" | "qsd8250_ffa")
@@ -51,12 +54,11 @@ case "$target" in
         echo 500000 > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate
         ;;
 
-    "aloha")
+    "alohag")
         echo "ondemand" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
         echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/up_threshold
         echo 30 > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/down_differential
         echo 500000 > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate
         echo 245760 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-
         ;;
 esac

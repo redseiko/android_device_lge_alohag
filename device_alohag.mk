@@ -43,19 +43,26 @@ PRODUCT_COPY_FILES += \
 # Board-specific init (does not support charging in "power off" state yet)
 PRODUCT_COPY_FILES += \
     device/lge/alohag/files/init.alohag.rc:root/init.alohag.rc \
-    device/lge/alohag/files/initlogo.rle:root/initlogo.rle \
-    device/lge/alohag/files/init.qcom.post_boot.sh:root/init.qcom.post_boot.sh
+    device/lge/alohag/files/logo.rle:root/logo.rle \
+    device/lge/alohag/files/init.qcom.post_boot.sh:root/init.qcom.post_boot.sh \
+    device/lge/alohag/files/init.lge.hidden-reset.sh:root/init.lge.hidden-reset.sh \
+    device/lge/alohag/files/init.qcom.rc:root/init.qcom.rc \
+    device/lge/alohag/files/init.qcom.sh:root/init.qcom.sh \
+    device/lge/alohag/files/init.upgrade.rc:root/init.upgrade.rc \
+    device/lge/alohag/files/sbin/bootlogo:root/sbin/bootlogo \
+    device/lge/alohag/files/sbin/chargerlogo:root/sbin/chargerlogo \
+    
 
 # 2D (using proprietary because of poor perfomance of open source libs)
 PRODUCT_COPY_FILES += \
     vendor/lge/alohag/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
-    vendor/lge/alohag/proprietary/lib/hw/gralloc.alohag.so:system/lib/hw/gralloc.alohag.so \
+    vendor/lge/alohag/proprietary/lib/hw/gralloc.msm7k.so:system/lib/hw/gralloc.msm7k.so \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    vendor/lge/alohag/proprietary/lib/hw/sensors.aloha.so:system/lib/hw/sensors.alohag.so \
+    vendor/lge/alohag/proprietary/lib/hw/sensors.alohag.so:system/lib/hw/sensors.alohag.so \
     vendor/lge/alohag/proprietary/bin/akmd2:system/bin/akmd2 \
-    vendor/lge/aloha/proprietary/lib/hw/lights.aloha.so:system/lib/hw/lights.msm7k.so \
+    vendor/lge/alohag/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.msm7k.so \
 
 # 3D
 PRODUCT_COPY_FILES += \
@@ -156,7 +163,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/alohag/proprietary/lib/libqueue.so:system/lib/libqueue.so \
     vendor/lge/alohag/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/lge/alohag/proprietary/lib/libauth.so:system/lib/libauth.so \
-    vendor/lge/alohag/proprietary/lib/libcm.so:system/lib/libcm.so \
     vendor/lge/alohag/proprietary/lib/libnv.so:system/lib/libnv.so \
     vendor/lge/alohag/proprietary/lib/libpbmlib.so:system/lib/libpbmlib.so \
     vendor/lge/alohag/proprietary/lib/libwms.so:system/lib/libwms.so \
@@ -168,7 +174,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/alohag/proprietary/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
     vendor/lge/alohag/proprietary/lib/libsnd.so:system/lib/libsnd.so \
     vendor/lge/alohag/proprietary/lib/libqmi.so:system/lib/libqmi.so \
-    vendor/lge/alohag/proprietary/lib/libdll.so:system/lib/libdll.so \
     vendor/lge/alohag/proprietary/lib/liblgerft.so:system/lib/liblgerft.so \
     vendor/lge/alohag/proprietary/lib/libbcmwl.so:system/lib/libbcmwl.so \
     vendor/lge/alohag/proprietary/lib/libdss.so:system/lib/libdss.so \
@@ -188,13 +193,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/alohag/proprietary/lib/libOmxAmrDec.so:system/lib/libOmxAmrDec.so \
     vendor/lge/alohag/proprietary/lib/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so \
     vendor/lge/alohag/proprietary/lib/libOmxAmrRtpDec.so:system/lib/libOmxAmrRtpDec.so \
-    vendor/lge/alohag/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
+    vendor/lge/alohag/proprietary/lib/libOmxEvrcHwDec.so:system/lib/libOmxEvrcHwDec.so \
     vendor/lge/alohag/proprietary/lib/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
     vendor/lge/alohag/proprietary/lib/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
     vendor/lge/alohag/proprietary/lib/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so \
     vendor/lge/alohag/proprietary/lib/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
     vendor/lge/alohag/proprietary/lib/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so \
-    vendor/lge/alohag/proprietary/lib/libOmxQcelpDec.so:system/lib/libOmxQcelpDec.so \
+    vendor/lge/alohag/proprietary/lib/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so \
     vendor/lge/alohag/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
     vendor/lge/alohag/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     vendor/lge/alohag/proprietary/lib/libOmxWmvDec.so:system/lib/libOmxWmvDec.so \

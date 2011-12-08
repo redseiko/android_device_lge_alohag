@@ -54,7 +54,7 @@ BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 BOARD_CUSTOM_USB_CONTROLLER := ../../device/lge/aloha/netd/UsbController.cpp
 #BOARD_CUSTOM_RILD := ../../../device/lge/aloha/rild/rild.c
 
-BOARD_EGL_CFG := device/lge/aloha/files/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/lge/alohag/files/lib/egl/egl.cfg
 
 BOARD_KERNEL_CMDLINE := mem=457M console=ttyMSM2,115200n8 pmem_mdp_size=0x1c80000 androidboot.hardware=alohag
 BOARD_KERNEL_BASE    := 0x13600000

@@ -90,3 +90,4 @@ BOARD_UMS_LUNFILE := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 DEVICE_RESOLUTION := 480x800
 TW_EXCLUDE_SUPERSU := true
 BOARD_HAS_NO_REAL_SDCARD := true
+TARGET_KERNEL_CONFIG := alohag-pref_defconfig

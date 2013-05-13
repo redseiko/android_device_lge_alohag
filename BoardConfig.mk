@@ -3,6 +3,7 @@ BOARD_USE_FROYO_LIBCAMERA := false
 
 
 TARGET_BOARD_PLATFORM := msm7k
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv6-vfp
 TARGET_CPU_ABI := armeabi-v6l
 TARGET_CPU_ABI2 := armeabi

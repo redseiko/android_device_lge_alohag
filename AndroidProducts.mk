@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_alohag.mk
+    $(LOCAL_DIR)/full_alohag.mk

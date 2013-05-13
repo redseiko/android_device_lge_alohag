@@ -50,7 +50,7 @@ WIFI_DRIVER_MODULE_NAME := wireless
 WIFI_DRIVER_FW_STA_PATH := "/system/etc/wl/rtecdc.bin"
 WIFI_DRIVER_FW_AP_PATH := "/system/etc/wl/rtecdc-apsta.bin"
 WIFI_DRIVER_HAS_LGE_SOFTAP := true
-
+export LD_LIBRARY_PATH .:/sbin
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 BOARD_CUSTOM_USB_CONTROLLER := ../../device/lge/alohag/netd/UsbController.cpp
 #BOARD_CUSTOM_RILD := ../../../device/lge/aloha/rild/rild.c
@@ -61,8 +61,8 @@ BOARD_KERNEL_CMDLINE := mem=457M console=ttyMSM2,115200n8 pmem_mdp_size=0x1c8000
 BOARD_KERNEL_BASE := 0x13600000
 BOARD_NAND_PAGE_SIZE := 0x00000800
 
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00500000
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00500000
+BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00440000
+#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00500000
 # changed system size smaller to avoid bad block and give room to grow
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x09534000
 #BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x0b280000
@@ -78,7 +78,7 @@ WITH_JIT := true
 #JS_ENGINE := jsc
 #USE_ALT_JS_ENGINE := true
 
-
+export LD_LIBRARY_PATH .:/sbin
 TARGET_PROVIDES_LIBAUDIO := true
 BOARD_PROVIDES_LIBRIL := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun"
@@ -86,3 +86,7 @@ BOARD_UMS_LUNFILE := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 
 #TARGET_PROXIMITY_SENSOR_LIMIT see geeksphone
 #BOARD_USES_FROYO_AUDIOPOLICY-see /malata/smb_a1011
+
+DEVICE_RESOLUTION := 480x800
+TW_EXCLUDE_SUPERSU := true
+BOARD_HAS_NO_REAL_SDCARD := true

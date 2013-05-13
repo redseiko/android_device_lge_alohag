@@ -105,6 +105,7 @@ lib/libOmxWmvDec.so
 "
 
 for FILE in $FILES; do
+	echo adb pull system/$FILE
 	adb pull system/$FILE ../../../vendor/lge/alohag/proprietary/$FILE
 done
 
